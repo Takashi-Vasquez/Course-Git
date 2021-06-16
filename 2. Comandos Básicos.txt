@@ -1,0 +1,81 @@
+Comandos basicos
+
+/**Inicializar un repositorio*//
+1. entrar a la carpeta contenedora con cd
+cd Desktop
+cd Nombre_carpeta
+
+git status 		# mostrar estado de git 
+
+git init 		#convertir la carpeta en carpeta git 
+
+cd .git			#entrar a la carpeta de git donde esta almacenado toda informacion de git
+
+cls			#limpiar consola (clear)
+/**Añadir archivos, status y commit**/
+
+git add nombreArchivo 	#añade el archivo
+
+git status		#ver el estado del archivo(para ver si se agrego)
+
+git add . 		#agrega todos los archivos a git
+
+git reset HEAD main.js	#sirve para cuando aun no quieres realizar commit regresar
+
+git commit -m "Titulo de commit" #Realizar commit
+
+git push 		#subir los cambios
+
+git pull		#descargar cambios de nuestro repositorio
+
+git commit		#guardar una copia local de cambios realizados en el repositorio
+
+git remote --v		#ver los comandos
+
+git fetch		#sirve para actualizar los cambios realizados por otro integrante
+
+ git log --oneline -4	# ver los cambios de la carpeta
+
+
+/**Usar el entorno staging**/
+
+git add index.html
+
+git reset HEAD index.html	#se esta quitando los cambios de stage
+
+git checkout -- index.html	#regresar el cambio realizado
+
+
+
+/** Ignorar archivos**/
+
+crear el archivo .gitignore y colocar los nombres de archivos e carpetas
+
+
+/** Borrar archivos**/
+
+git checkout nombreArchivo.css #recuperar el archivo borrado accidentalmente
+
+git rm nombreArchivo.txt	#sirve para borrar el archivo que ya no queremos 
+	luego usar commit para confirmar
+
+ 
+/** Trabajar con log **/
+
+git log 		#ver todos los commit realizados en el repositorio
+
+git checkout -b fondo-plomo #crea una rama  y guardacambios realizados y posteriosmente add y commit 
+
+
+/** Usar ramas **/
+
+git branch master	#se puede cambiar de rama
+
+git commit -m "añade defer a script"
+
+git branch -d fondo-plomo	#eliminar la rama
+
+git branch -D fondo-plomo	#eliminar la rama
+
+git merge Nuevo-Título		#integra la rama a en la rama master o en donde se ubique
+

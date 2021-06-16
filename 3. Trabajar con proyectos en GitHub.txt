@@ -1,0 +1,15 @@
+/** Subir un proyecto a GitHub **/
+git remote  add origin https://github.com/TakashiV97/Course-Git.git #
+
+git push -u origin master	#sube los archivos a github
+
+git remote -v  			#para ver todos los mandos de nuestro depósito local.
+
+git remote rm nombre 		#seguido del nombre del remoto para eliminar un remoto
+	
+
+/** Clonar un repositorio **/
+
+git clone http://....		#clonamos el repositorio que se encuentra en github
+
+git pull origin master		#descargar contenido

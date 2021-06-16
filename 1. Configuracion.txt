@@ -1,0 +1,9 @@
+
+/**Configurar Git**/
+
+git config --global user.name"TakashiV97"
+
+git config --global user.email takashivm97@gmail.com
+
+git config --list
+
